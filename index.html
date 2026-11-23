@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Vance Photography | Editorial, Portrait & Wedding Visuals</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond (Serif) & Plus Jakarta Sans (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0D0D0F',
+                        charcoal: '#151518',
+                        slateDark: '#1E1E22',
+                        cream: '#F5F2EB',
+                        mutedCream: '#A8A39A',
+                        gold: '#C8A97E',
+                        goldHover: '#D9BC94'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-obsidian text-cream font-sans antialiased selection:bg-gold selection:text-obsidian overflow-x-hidden">
+
+    <!-- ==========================================
+         1. NAVIGATION BAR
+    =========================================== -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-5 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#hero" class="group flex items-center gap-3 focus:outline-none">
+                <span class="w-8 h-8 rounded-full border border-gold/60 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-obsidian transition-colors duration-300">
+                    <i data-lucide="aperture" class="w-4 h-4"></i>
+                </span>
+                <div class="flex flex-col">
+                    <span class="font-serif text-2xl tracking-wider font-semibold text-cream leading-none">ELENA VANCE</span>
+                    <span class="text-[10px] tracking-[0.28em] uppercase text-gold mt-1">Photography</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm tracking-widest uppercase">
+                <a href="#about" class="text-mutedCream hover:text-gold transition-colors duration-200 py-2">About</a>
+                <a href="#gallery" class="text-mutedCream hover:text-gold transition-colors duration-200 py-2">Gallery</a>
+                <a href="#services" class="text-mutedCream hover:text-gold transition-colors duration-200 py-2">Services</a>
+                <a href="#packages" class="text-mutedCream hover:text-gold transition-colors duration-200 py-2">Packages</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full border border-gold/70 text-gold hover:bg-gold hover:text-obsidian transition-all duration-300 font-medium">
+                    Book Session
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-lg text-cream hover:text-gold hover:bg-charcoal focus:outline-none transition-colors">
+                <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+                <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-charcoal/95 backdrop-blur-md border-b border-white/10 px-6 pt-4 pb-8 mt-3">
+            <nav class="flex flex-col space-y-4 text-center uppercase tracking-widest text-sm">
+                <a href="#about" class="mobile-link py-2 text-mutedCream hover:text-gold transition-colors">About</a>
+                <a href="#gallery" class="mobile-link py-2 text-mutedCream hover:text-gold transition-colors">Gallery</a>
+                <a href="#services" class="mobile-link py-2 text-mutedCream hover:text-gold transition-colors">Services</a>
+                <a href="#packages" class="mobile-link py-2 text-mutedCream hover:text-gold transition-colors">Packages</a>
+                <a href="#contact" class="mobile-link mt-2 py-3 rounded-full bg-gold text-obsidian font-semibold">Book Session</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         2. HERO SECTION
+    =========================================== -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Fullscreen Backdrop Image -->
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=2000&q=85" 
+                alt="Dramatic editorial mountain landscape photography" 
+                onerror="this.src='https://placehold.co/1920x1080/0D0D0F/C8A97E?text=Elena+Vance+Photography'"
+                class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000"
+            />
+            <!-- Rich Editorial Vignette Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/55 to-obsidian"></div>
+            <div class="absolute inset-0 bg-radial from-transparent to-obsidian/70"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
+            <p class="text-gold uppercase tracking-[0.35em] text-xs md:text-sm mb-5 font-medium">
+                Fine Art &bull; Editorial &bull; Timeless Stories
+            </p>
+            <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight text-cream leading-[1.08] mb-6">
+                Capturing Light,<br />
+                <span class="italic text-gold">Emotion &amp; Legacy</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-mutedCream text-base sm:text-lg md:text-xl font-light leading-relaxed mb-10">
+                Bespoke portraiture, intimate destination weddings, and evocative editorial imagery crafted with natural light and analog sensibility.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#gallery" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold text-obsidian font-medium tracking-wider uppercase text-xs hover:bg-goldHover transition-all duration-300 shadow-lg shadow-gold/10">
+                    Explore Portfolio
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full border border-cream/30 text-cream hover:border-gold hover:text-gold backdrop-blur-sm font-medium tracking-wider uppercase text-xs transition-all duration-300">
+                    Inquire &amp; Book
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" aria-label="Scroll to About" class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-mutedCream hover:text-gold transition-colors">
+            <span class="text-[10px] uppercase tracking-[0.25em]">Scroll</span>
+            <i data-lucide="arrow-down" class="w-4 h-4 animate-bounce"></i>
+        </a>
+    </section>
+
+    <!-- ==========================================
+         3. PHOTOGRAPHER INTRODUCTION / ABOUT
+    =========================================== -->
+    <section id="about" class="py-24 md:py-32 bg-obsidian relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Photographer Portrait Column -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img 
+                            src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=900&q=85" 
+                            alt="Elena Vance holding a vintage camera" 
+                            onerror="this.src='https://placehold.co/800x1000/151518/C8A97E?text=Elena+Vance'"
+                            class="w-full h-[500px] md:h-[580px] object-cover object-center"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-obsidian/70 via-transparent to-transparent"></div>
+                    </div>
+                    <!-- Floating Accent Badge -->
+                    <div class="hidden sm:flex items-center gap-4 bg-charcoal/95 backdrop-blur-md border border-gold/30 rounded-2xl p-5 absolute -bottom-6 -right-6 shadow-xl">
+                        <div class="w-12 h-12 rounded-full bg-gold/15 flex items-center justify-center text-gold">
+                            <i data-lucide="camera" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-serif text-lg text-cream font-semibold">Leica &amp; Medium Format</p>
+                            <p class="text-xs text-mutedCream">Natural Light &amp; Film Hybrid</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biography & Philosophy Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-3">
+                        <span class="w-8 h-[1px] bg-gold"></span>
+                        <span class="text-gold uppercase tracking-[0.25em] text-xs font-medium">The Artist Behind the Lens</span>
+                    </div>
+                    
+                    <h2 class="font-serif text-4xl sm:text-5xl text-cream font-normal leading-tight">
+                        Hello, I’m Elena Vance. I frame fleeting moments into <span class="italic text-gold">heirloom art.</span>
+                    </h2>
+
+                    <p class="text-mutedCream leading-relaxed text-base md:text-lg font-light">
+                        Based between New York and the Pacific Northwest, my work is rooted in quiet observation, honest human connection, and sculptural natural light. Over the past decade, I have traveled across four continents documenting intimate love stories, visionary creatives, and untamed landscapes.
+                    </p>
+
+                    <p class="text-mutedCream leading-relaxed text-base font-light">
+                        <strong class="text-cream font-medium">My Philosophy:</strong> Great photography doesn’t feel staged—it feels remembered. By blending editorial direction with unscripted documentary stillness, I create photographs that remain evocative fifty years from today.
+                    </p>
+
+                    <!-- Gear & Style Highlights -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-charcoal border border-white/5 rounded-xl p-4 flex items-start gap-3.5">
+                            <i data-lucide="sun" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+                            <div>
+                                <h3 class="text-sm font-semibold text-cream">Sculpted Natural Light</h3>
+                                <p class="text-xs text-mutedCream mt-1">Golden hour warmth &amp; moody chiaroscuro shadow play.</p>
+                            </div>
+                        </div>
+                        <div class="bg-charcoal border border-white/5 rounded-xl p-4 flex items-start gap-3.5">
+                            <i data-lucide="film" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+                            <div>
+                                <h3 class="text-sm font-semibold text-cream">Analog + Digital Workflow</h3>
+                                <p class="text-xs text-mutedCream mt-1">Hasselblad digital clarity paired with Kodak Portra film.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Statistics -->
+                    <div class="grid grid-cols-3 gap-6 pt-6 border-t border-white/10">
+                        <div>
+                            <p class="font-serif text-3xl sm:text-4xl text-gold font-semibold">11+</p>
+                            <p class="text-xs uppercase tracking-wider text-mutedCream mt-1">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-3xl sm:text-4xl text-gold font-semibold">420+</p>
+                            <p class="text-xs uppercase tracking-wider text-mutedCream mt-1">Shoots Completed</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-3xl sm:text-4xl text-gold font-semibold">18</p>
+                            <p class="text-xs uppercase tracking-wider text-mutedCream mt-1">International Awards</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. INTERACTIVE IMAGE GALLERY
+    =========================================== -->
+    <section id="gallery" class="py-24 md:py-32 bg-charcoal border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-gold uppercase tracking-[0.25em] text-xs font-medium">Selected Works</span>
+                <h2 class="font-serif text-4xl sm:text-5xl text-cream mt-3 mb-4">Curated Portfolio</h2>
+                <p class="text-mutedCream text-sm sm:text-base font-light">
+                    Filter by discipline or click any photograph to inspect full-resolution detail and camera settings.
+                </p>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div id="gallery-filters" class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-12">
+                <button data-filter="all" class="filter-btn active px-5 py-2.5 rounded-full text-xs uppercase tracking-widest font-medium transition-all duration-300 bg-gold text-obsidian">
+                    All Works
+                </button>
+                <button data-filter="portraits" class="filter-btn px-5 py-2.5 rounded-full text-xs uppercase tracking-widest font-medium transition-all duration-300 bg-slateDark text-mutedCream hover:text-cream border border-white/10">
+                    Portraits
+                </button>
+                <button data-filter="weddings" class="filter-btn px-5 py-2.5 rounded-full text-xs uppercase tracking-widest font-medium transition-all duration-300 bg-slateDark text-mutedCream hover:text-cream border border-white/10">
+                    Weddings
+                </button>
+                <button data-filter="landscapes" class="filter-btn px-5 py-2.5 rounded-full text-xs uppercase tracking-widest font-medium transition-all duration-300 bg-slateDark text-mutedCream hover:text-cream border border-white/10">
+                    Landscapes
+                </button>
+                <button data-filter="editorial" class="filter-btn px-5 py-2.5 rounded-full text-xs uppercase tracking-widest font-medium transition-all duration-300 bg-slateDark text-mutedCream hover:text-cream border border-white/10">
+                    Editorial
+                </button>
+            </div>
+
+            <!-- Masonry-Style Responsive Grid -->
+            <div id="gallery-grid" class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Gallery items injected dynamically via JS for synchronized Lightbox indexing -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         5. PHOTOGRAPHY SERVICES
+    =========================================== -->
+    <section id="services" class="py-24 md:py-32 bg-obsidian">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-gold uppercase tracking-[0.25em] text-xs font-medium">What I Offer</span>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-cream mt-3">Photography Services</h2>
+                </div>
+                <p class="text-mutedCream max-w-md text-sm sm:text-base font-light">
+                    Every commission includes personalized creative direction, location scouting, and museum-grade color grading.
+                </p>
+            </div>
+
+            <!-- 4 Service Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Service 1 -->
+                <div class="group bg-charcoal border border-white/10 hover:border-gold/50 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-slateDark border border-white/10 group-hover:border-gold/40 flex items-center justify-center text-gold mb-6 transition-colors">
+                            <i data-lucide="user" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl text-cream mb-3 group-hover:text-gold transition-colors">Portrait &amp; Lifestyle</h3>
+                        <p class="text-mutedCream text-sm leading-relaxed font-light">
+                            Intimate individual portraits, artist press kits, couples, and relaxed family sessions photographed on location in natural light.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gold uppercase tracking-wider">
+                        <span>Studio &amp; Outdoor</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group bg-charcoal border border-white/10 hover:border-gold/50 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-slateDark border border-white/10 group-hover:border-gold/40 flex items-center justify-center text-gold mb-6 transition-colors">
+                            <i data-lucide="heart" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl text-cream mb-3 group-hover:text-gold transition-colors">Weddings &amp; Events</h3>
+                        <p class="text-mutedCream text-sm leading-relaxed font-light">
+                            Poetic, documentary-driven coverage for intimate elopements, destination weddings, and private gala celebrations worldwide.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gold uppercase tracking-wider">
+                        <span>Full-Day Storytelling</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group bg-charcoal border border-white/10 hover:border-gold/50 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-slateDark border border-white/10 group-hover:border-gold/40 flex items-center justify-center text-gold mb-6 transition-colors">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl text-cream mb-3 group-hover:text-gold transition-colors">Commercial &amp; Editorial</h3>
+                        <p class="text-mutedCream text-sm leading-relaxed font-light">
+                            High-impact visual campaigns, fashion lookbooks, hospitality storytelling, and architectural imagery for discerning brands.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gold uppercase tracking-wider">
+                        <span>Brand Campaigns</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group bg-charcoal border border-white/10 hover:border-gold/50 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-slateDark border border-white/10 group-hover:border-gold/40 flex items-center justify-center text-gold mb-6 transition-colors">
+                            <i data-lucide="mountain" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl text-cream mb-3 group-hover:text-gold transition-colors">Landscape &amp; Fine Art</h3>
+                        <p class="text-mutedCream text-sm leading-relaxed font-light">
+                            Limited-edition archival pigment prints and custom interior art commissions capturing dramatic coastal and alpine vistas.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gold uppercase tracking-wider">
+                        <span>Archival Prints</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         6. PHOTOGRAPHY PACKAGES & PRICING
+    =========================================== -->
+    <section id="packages" class="py-24 md:py-32 bg-charcoal border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            
+            <!-- Header -->
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-gold uppercase tracking-[0.25em] text-xs font-medium">Investment</span>
+                <h2 class="font-serif text-4xl sm:text-5xl text-cream mt-3 mb-4">Packages &amp; Collections</h2>
+                <p class="text-mutedCream text-sm sm:text-base font-light">
+                    Transparent collections tailored to your vision. Custom multi-day and destination quotes are available upon request.
+                </p>
+            </div>
+
+            <!-- 3 Pricing Tiers -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Tier 1: Essential Session -->
+                <div class="bg-obsidian border border-white/10 rounded-2xl p-8 md:p-10 flex flex-col justify-between">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.2em] text-mutedCream">Tier 01</p>
+                        <h3 class="font-serif text-3xl text-cream mt-2">Essential Session</h3>
+                        <p class="text-sm text-mutedCream font-light mt-2">Ideal for individual portraits, couples, and creative branding.</p>
+                        
+                        <div class="my-8 pb-8 border-b border-white/10">
+                            <span class="font-serif text-5xl text-cream">$650</span>
+                            <span class="text-xs text-mutedCream uppercase tracking-wider ml-2">/ session</span>
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-mutedCream">
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span><strong class="text-cream">2 Hours</strong> of on-location coverage</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span><strong class="text-cream">45 High-Resolution</strong> edited digital images</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span>1–2 curated outfit &amp; location changes</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span>Private online gallery &amp; print release</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span>Turnaround: <strong class="text-cream">7 Business Days</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button 
+                        onclick="selectPackage('Essential Session ($650)')"
+                        class="mt-10 w-full py-3.5 px-6 rounded-full border border-gold/60 text-gold hover:bg-gold hover:text-obsidian font-medium text-xs uppercase tracking-widest transition-all duration-300"
+                    >
+                        Select Package
+                    </button>
+                </div>
+
+                <!-- Tier 2: Signature Collection (Featured) -->
+                <div class="bg-obsidian border-2 border-gold rounded-2xl p-8 md:p-10 flex flex-col justify-between relative shadow-2xl shadow-gold/5">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gold text-obsidian text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1 rounded-full">
+                        Most Popular
+                    </div>
+
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.2em] text-gold">Tier 02</p>
+                        <h3 class="font-serif text-3xl text-cream mt-2">Signature Collection</h3>
+                        <p class="text-sm text-mutedCream font-light mt-2">Designed for editorial lookbooks, engagements, and intimate elopements.</p>
+                        
+                        <div class="my-8 pb-8 border-b border-white/10">
+                            <span class="font-serif text-5xl text-gold">$1,450</span>
+                            <span class="text-xs text-mutedCream uppercase tracking-wider ml-2">/ collection</span>
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-mutedCream">
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span><strong class="text-cream">4 Hours</strong> of multi-location coverage</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span><strong class="text-cream">120+ High-Resolution</strong> edited images</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span>35mm Medium-Format Film add-on included</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span>Creative moodboard &amp; styling consultation</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span>Turnaround: <strong class="text-cream">10 Business Days</strong> + 48hr Sneak Peeks</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button 
+                        onclick="selectPackage('Signature Collection ($1,450)')"
+                        class="mt-10 w-full py-3.5 px-6 rounded-full bg-gold text-obsidian hover:bg-goldHover font-semibold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg shadow-gold/15"
+                    >
+                        Select Package
+                    </button>
+                </div>
+
+                <!-- Tier 3: Luxury Full-Day -->
+                <div class="bg-obsidian border border-white/10 rounded-2xl p-8 md:p-10 flex flex-col justify-between">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.2em] text-mutedCream">Tier 03</p>
+                        <h3 class="font-serif text-3xl text-cream mt-2">Luxury Full-Day</h3>
+                        <p class="text-sm text-mutedCream font-light mt-2">Complete archival storytelling for weddings &amp; commercial campaigns.</p>
+                        
+                        <div class="my-8 pb-8 border-b border-white/10">
+                            <span class="font-serif text-5xl text-cream">$3,200</span>
+                            <span class="text-xs text-mutedCream uppercase tracking-wider ml-2">/ full day</span>
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-mutedCream">
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span><strong class="text-cream">Up to 9 Hours</strong> continuous coverage</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span><strong class="text-cream">450+ High-Resolution</strong> hand-graded images</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span>Second associate photographer included</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span>Handcrafted linen heirloom photo album (30 pages)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+                                <span>Turnaround: <strong class="text-cream">3 Weeks</strong> + 72hr Preview Gallery</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button 
+                        onclick="selectPackage('Luxury Full-Day ($3,200)')"
+                        class="mt-10 w-full py-3.5 px-6 rounded-full border border-gold/60 text-gold hover:bg-gold hover:text-obsidian font-medium text-xs uppercase tracking-widest transition-all duration-300"
+                    >
+                        Select Package
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         7. CONTACT & BOOKING SECTION
+    =========================================== -->
+    <section id="contact" class="py-24 md:py-32 bg-obsidian relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                
+                <!-- Direct Contact Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-gold uppercase tracking-[0.25em] text-xs font-medium">Inquire &amp; Reserve</span>
+                        <h2 class="font-serif text-4xl sm:text-5xl text-cream mt-3 leading-tight">
+                            Let’s Create Something <span class="italic text-gold">Unforgettable</span>
+                        </h2>
+                        <p class="text-mutedCream text-base font-light mt-4 leading-relaxed">
+                            Currently booking commissions for 2026 &amp; 2027. Share your preferred dates, location, and creative vision—I respond to all inquiries within 24 hours.
+                        </p>
+                    </div>
+
+                    <!-- Contact Details List -->
+                    <div class="space-y-5 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-full bg-charcoal border border-white/10 flex items-center justify-center text-gold shrink-0">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-mutedCream">Direct Email</p>
+                                <a href="mailto:studio@elenavance.com" class="text-cream hover:text-gold transition-colors font-medium">studio@elenavance.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-full bg-charcoal border border-white/10 flex items-center justify-center text-gold shrink-0">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-mutedCream">Studio Telephone</p>
+                                <a href="tel:+12125550194" class="text-cream hover:text-gold transition-colors font-medium">+1 (212) 555-0194</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-full bg-charcoal border border-white/10 flex items-center justify-center text-gold shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-mutedCream">Natural Light Loft Studio</p>
+                                <p class="text-cream font-medium">458 Broome Street, Suite 4B, SoHo, NY 10013</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="pt-4 border-t border-white/10">
+                        <p class="text-xs uppercase tracking-widest text-mutedCream mb-4">Follow Recent Journals</p>
+                        <div class="flex items-center gap-3">
+                            <a href="#contact" aria-label="Instagram" class="w-10 h-10 rounded-full bg-charcoal border border-white/10 hover:border-gold hover:text-gold flex items-center justify-center text-cream transition-all">
+                                <i data-lucide="instagram" class="w-4 h-4"></i>
+                            </a>
+                            <a href="#contact" aria-label="Camera Journal" class="w-10 h-10 rounded-full bg-charcoal border border-white/10 hover:border-gold hover:text-gold flex items-center justify-center text-cream transition-all">
+                                <i data-lucide="aperture" class="w-4 h-4"></i>
+                            </a>
+                            <a href="#contact" aria-label="Globe" class="w-10 h-10 rounded-full bg-charcoal border border-white/10 hover:border-gold hover:text-gold flex items-center justify-center text-cream transition-all">
+                                <i data-lucide="globe" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Booking Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-charcoal border border-white/10 rounded-2xl p-6 sm:p-10 shadow-xl">
+                        <form id="booking-form" novalidate class="space-y-6">
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <!-- Full Name -->
+                                <div>
+                                    <label for="client-name" class="block text-xs uppercase tracking-wider text-mutedCream mb-2">Full Name *</label>
+                                    <input 
+                                        type="text" 
+                                        id="client-name" 
+                                        name="name" 
+                                        required 
+                                        placeholder="Clara Beaumont"
+                                        class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/10 text-cream placeholder-white/25 focus:outline-none focus:border-gold transition-colors text-sm"
+                                    />
+                                    <p id="error-name" class="text-red-400 text-xs mt-1.5 hidden">Please enter your full name.</p>
+                                </div>
+
+                                <!-- Email Address -->
+                                <div>
+                                    <label for="client-email" class="block text-xs uppercase tracking-wider text-mutedCream mb-2">Email Address *</label>
+                                    <input 
+                                        type="email" 
+                                        id="client-email" 
+                                        name="email" 
+                                        required 
+                                        placeholder="clara@example.com"
+                                        class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/10 text-cream placeholder-white/25 focus:outline-none focus:border-gold transition-colors text-sm"
+                                    />
+                                    <p id="error-email" class="text-red-400 text-xs mt-1.5 hidden">Please enter a valid email address.</p>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <!-- Package Dropdown -->
+                                <div>
+                                    <label for="package-select" class="block text-xs uppercase tracking-wider text-mutedCream mb-2">Selected Package *</label>
+                                    <div class="relative">
+                                        <select 
+                                            id="package-select" 
+                                            name="package" 
+                                            required
+                                            class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/10 text-cream focus:outline-none focus:border-gold transition-colors text-sm appearance-none cursor-pointer"
+                                        >
+                                            <option value="" disabled selected>Choose a collection...</option>
+                                            <option value="Essential Session ($650)">Essential Session ($650)</option>
+                                            <option value="Signature Collection ($1,450)">Signature Collection ($1,450)</option>
+                                            <option value="Luxury Full-Day ($3,200)">Luxury Full-Day ($3,200)</option>
+                                            <option value="Custom Commercial / Editorial">Custom Commercial / Editorial</option>
+                                        </select>
+                                        <i data-lucide="chevron-down" class="w-4 h-4 text-gold absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                                    </div>
+                                    <p id="error-package" class="text-red-400 text-xs mt-1.5 hidden">Please select a photography package.</p>
+                                </div>
+
+                                <!-- Preferred Date Picker -->
+                                <div>
+                                    <label for="session-date" class="block text-xs uppercase tracking-wider text-mutedCream mb-2">Preferred Date *</label>
+                                    <input 
+                                        type="date" 
+                                        id="session-date" 
+                                        name="date" 
+                                        required
+                                        class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/10 text-cream focus:outline-none focus:border-gold transition-colors text-sm [color-scheme:dark]"
+                                    />
+                                    <p id="error-date" class="text-red-400 text-xs mt-1.5 hidden">Please select a valid future date.</p>
+                                </div>
+                            </div>
+
+                            <!-- Project / Story Details -->
+                            <div>
+                                <label for="session-message" class="block text-xs uppercase tracking-wider text-mutedCream mb-2">Tell Me About Your Vision *</label>
+                                <textarea 
+                                    id="session-message" 
+                                    name="message" 
+                                    rows="4" 
+                                    required
+                                    placeholder="Share your location, aesthetic inspiration, or event timeline..."
+                                    class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/10 text-cream placeholder-white/25 focus:outline-none focus:border-gold transition-colors text-sm resize-none"
+                                ></textarea>
+                                <p id="error-message" class="text-red-400 text-xs mt-1.5 hidden">Please share a few details about your shoot.</p>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button 
+                                type="submit" 
+                                class="w-full py-4 px-8 rounded-full bg-gold text-obsidian hover:bg-goldHover font-semibold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-lg shadow-gold/10 flex items-center justify-center gap-2"
+                            >
+                                <span>Send Booking Inquiry</span>
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                            </button>
+                        </form>
+
+                        <!-- Confirmation Message Box (Hidden by default) -->
+                        <div id="form-confirmation" class="hidden text-center py-10 space-y-4">
+                            <div class="w-16 h-16 rounded-full bg-gold/15 border border-gold/40 text-gold flex items-center justify-center mx-auto">
+                                <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+                            </div>
+                            <h3 class="font-serif text-3xl text-cream">Inquiry Received</h3>
+                            <p id="confirmation-details" class="text-mutedCream text-sm max-w-md mx-auto leading-relaxed">
+                                Thank you for reaching out. Elena will review your date and send a personalized proposal within 24 hours.
+                            </p>
+                            <button 
+                                id="reset-form-btn"
+                                class="mt-4 px-6 py-2.5 rounded-full border border-white/20 text-xs uppercase tracking-widest text-cream hover:border-gold hover:text-gold transition-colors"
+                            >
+                                Send Another Inquiry
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer class="bg-charcoal border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <span class="font-serif text-xl tracking-wider font-semibold text-cream">ELENA VANCE</span>
+                <span class="text-gold">&bull;</span>
+                <span class="text-xs uppercase tracking-widest text-mutedCream">Fine Art &amp; Editorial Photography</span>
+            </div>
+            <p class="text-xs text-mutedCream">
+                &copy; 2026 Elena Vance Photography. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         FULL-SCREEN LIGHTBOX MODAL
+    =========================================== -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox" class="fixed inset-0 z-50 hidden bg-obsidian/95 backdrop-blur-lg flex items-center justify-center p-4 sm:p-8">
+        
+        <!-- Close Button -->
+        <button id="lightbox-close" aria-label="Close Lightbox" class="absolute top-5 right-5 sm:top-8 sm:right-8 z-20 p-3 rounded-full bg-charcoal/80 border border-white/15 text-cream hover:text-gold hover:border-gold transition-colors">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Previous Image Button -->
+        <button id="lightbox-prev" aria-label="Previous Image" class="absolute left-3 sm:left-8 top-1/2 -translate-y-1/2 z-20 p-3 sm:p-4 rounded-full bg-charcoal/80 border border-white/15 text-cream hover:text-gold hover:border-gold transition-colors">
+            <i data-lucide="chevron-left" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Next Image Button -->
+        <button id="lightbox-next" aria-label="Next Image" class="absolute right-3 sm:right-8 top-1/2 -translate-y-1/2 z-20 p-3 sm:p-4 rounded-full bg-charcoal/80 border border-white/15 text-cream hover:text-gold hover:border-gold transition-colors">
+            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Main Image & Metadata Container -->
+        <div class="max-w-5xl w-full flex flex-col items-center">
+            <div class="relative max-h-[72vh] overflow-hidden rounded-xl border border-white/10 shadow-2xl">
+                <img 
+                    id="lightbox-img" 
+                    src="" 
+                    alt="" 
+                    class="max-h-[72vh] w-auto object-contain mx-auto"
+                />
+            </div>
+
+            <!-- Caption & EXIF Metadata Bar -->
+            <div class="w-full max-w-3xl mt-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-2 text-center sm:text-left">
+                <div>
+                    <span id="lightbox-category" class="text-[11px] uppercase tracking-[0.25em] text-gold font-medium">Category</span>
+                    <h3 id="lightbox-title" class="font-serif text-2xl text-cream mt-0.5">Photo Title</h3>
+                </div>
+                <div class="flex items-center justify-center sm:justify-end gap-4 text-xs text-mutedCream bg-charcoal/90 border border-white/10 px-4 py-2.5 rounded-full">
+                    <span class="flex items-center gap-1.5">
+                        <i data-lucide="camera" class="w-3.5 h-3.5 text-gold"></i>
+                        <span id="lightbox-camera">Leica SL2-S</span>
+                    </span>
+                    <span class="text-white/20">|</span>
+                    <span id="lightbox-settings">50mm &bull; f/1.4 &bull; 1/500s</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         JAVASCRIPT APPLICATION LOGIC
+    =========================================== -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        /* ------------------------------------------
+           1. CURATED PORTFOLIO DATA (HIGH-RES UNSPLASH)
+        ------------------------------------------- */
+        const portfolioItems = [
+            {
+                id: 1,
+                title: "Golden Hour Reverie",
+                category: "portraits",
+                camera: "Hasselblad X2D 100C",
+                settings: "80mm • f/1.9 • ISO 100",
+                url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85"
+            },
+            {
+                id: 2,
+                title: "Vows Above the Mist",
+                category: "weddings",
+                camera: "Leica SL2-S",
+                settings: "35mm • f/1.4 • ISO 400",
+                url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85"
+            },
+            {
+                id: 3,
+                title: "Solitude in Dolomites",
+                category: "landscapes",
+                camera: "Hasselblad X2D 100C",
+                settings: "28mm • f/8.0 • ISO 64",
+                url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85"
+            },
+            {
+                id: 4,
+                title: "Nocturne Couture Issue IV",
+                category: "editorial",
+                camera: "Contax 645 • Portra 400",
+                settings: "80mm • f/2.0 • 1/250s",
+                url: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=85"
+            },
+            {
+                id: 5,
+                title: "Quiet Grace in Monochrome",
+                category: "portraits",
+                camera: "Leica M11 Monochrom",
+                settings: "50mm • f/1.4 • ISO 200",
+                url: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1200&q=85"
+            },
+            {
+                id: 6,
+                title: "Tuscan Twilight Embrace",
+                category: "weddings",
+                camera: "Leica SL2-S",
+                settings: "50mm • f/1.2 • ISO 320",
+                url: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85"
+            },
+            {
+                id: 7,
+                title: "Obsidian Coastline, Iceland",
+                category: "landscapes",
+                camera: "Hasselblad X2D 100C",
+                settings: "21mm • f/11 • 1.5s",
+                url: "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=1200&q=85"
+            },
+            {
+                id: 8,
+                title: "Atelier Architectural Study",
+                category: "editorial",
+                camera: "Leica SL2-S",
+                settings: "24mm • f/4.0 • ISO 100",
+                url: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85"
+            },
+            {
+                id: 9,
+                title: "First Dance Under Candlelight",
+                category: "weddings",
+                camera: "Leica SL2-S",
+                settings: "35mm • f/1.4 • ISO 1600",
+                url: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=85"
+            }
+        ];
+
+        let activeFilter = 'all';
+        let filteredItems = [...portfolioItems];
+        let currentLightboxIndex = 0;
+
+        /* ------------------------------------------
+           2. NAVBAR SCROLL & MOBILE MENU TOGGLE
+        ------------------------------------------- */
+        const navbar = document.getElementById('navbar');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-obsidian/90', 'backdrop-blur-md', 'border-b', 'border-white/10', 'py-3.5');
+                navbar.classList.remove('bg-transparent', 'py-5');
+            } else {
+                navbar.classList.remove('bg-obsidian/90', 'backdrop-blur-md', 'border-b', 'border-white/10', 'py-3.5');
+                navbar.classList.add('bg-transparent', 'py-5');
+            }
+        });
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden', isHidden);
+            menuIconClose.classList.toggle('hidden', !isHidden);
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            });
+        });
+
+        /* ------------------------------------------
+           3. GALLERY RENDERING & FILTERING
+        ------------------------------------------- */
+        const galleryGrid = document.getElementById('gallery-grid');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+
+        function renderGallery(category) {
+            activeFilter = category;
+            filteredItems = category === 'all' 
+                ? [...portfolioItems] 
+                : portfolioItems.filter(item => item.category === category);
+
+            galleryGrid.innerHTML = '';
+
+            filteredItems.forEach((item, index) => {
+                const figure = document.createElement('figure');
+                figure.className = 'group relative break-inside-avoid rounded-2xl overflow-hidden bg-obsidian border border-white/10 cursor-pointer shadow-lg';
+                figure.setAttribute('tabindex', '0');
+                figure.setAttribute('role', 'button');
+                figure.setAttribute('aria-label', `View ${item.title} in full screen`);
+
+                figure.innerHTML = `
+                    <img 
+                        src="${item.url}" 
+                        alt="${item.title}" 
+                        loading="lazy"
+                        onerror="this.src='https://placehold.co/800x1000/151518/C8A97E?text=${encodeURIComponent(item.title)}'"
+                        class="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                    <figcaption class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-obsidian/30 to-transparent opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[11px] uppercase tracking-[0.22em] text-gold font-medium">${item.category}</span>
+                        <h3 class="font-serif text-2xl text-cream mt-1">${item.title}</h3>
+                        <p class="text-xs text-mutedCream mt-1.5 flex items-center gap-2">
+                            <i data-lucide="camera" class="w-3.5 h-3.5 text-gold"></i>
+                            <span>${item.camera} &bull; ${item.settings}</span>
+                        </p>
+                    </figcaption>
+                `;
+
+                // Open Lightbox on click or Enter key
+                figure.addEventListener('click', () => openLightbox(index));
+                figure.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openLightbox(index);
+                    }
+                });
+
+                galleryGrid.appendChild(figure);
+            });
+
+            // Re-render newly added Lucide icons
+            lucide.createIcons();
+        }
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Reset all buttons
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-gold', 'text-obsidian');
+                    b.classList.add('bg-slateDark', 'text-mutedCream', 'border', 'border-white/10');
+                });
+                // Highlight active button
+                btn.classList.remove('bg-slateDark', 'text-mutedCream', 'border', 'border-white/10');
+                btn.classList.add('bg-gold', 'text-obsidian');
+
+                renderGallery(btn.dataset.filter);
+            });
+        });
+
+        // Initial Gallery Render
+        renderGallery('all');
+
+        /* ------------------------------------------
+           4. LIGHTBOX MODAL WITH KEYBOARD NAVIGATION
+        ------------------------------------------- */
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCategory = document.getElementById('lightbox-category');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxCamera = document.getElementById('lightbox-camera');
+        const lightboxSettings = document.getElementById('lightbox-settings');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const lightboxPrev = document.getElementById('lightbox-prev');
+        const lightboxNext = document.getElementById('lightbox-next');
+
+        function updateLightboxContent() {
+            const item = filteredItems[currentLightboxIndex];
+            if (!item) return;
+
+            lightboxImg.src = item.url;
+            lightboxImg.alt = item.title;
+            lightboxCategory.textContent = item.category;
+            lightboxTitle.textContent = item.title;
+            lightboxCamera.textContent = item.camera;
+            lightboxSettings.textContent = item.settings;
+        }
+
+        function openLightbox(index) {
+            currentLightboxIndex = index;
+            updateLightboxContent();
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function showNextImage() {
+            currentLightboxIndex = (currentLightboxIndex + 1) % filteredItems.length;
+            updateLightboxContent();
+        }
+
+        function showPrevImage() {
+            currentLightboxIndex = (currentLightboxIndex - 1 + filteredItems.length) % filteredItems.length;
+            updateLightboxContent();
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxNext.addEventListener('click', showNextImage);
+        lightboxPrev.addEventListener('click', showPrevImage);
+
+        // Close on backdrop click
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        // Keyboard support (Escape, Left Arrow, Right Arrow)
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') showNextImage();
+            if (e.key === 'ArrowLeft') showPrevImage();
+        });
+
+        /* ------------------------------------------
+           5. PACKAGE SELECTION & BOOKING FORM
+        ------------------------------------------- */
+        const packageSelect = document.getElementById('package-select');
+        const bookingForm = document.getElementById('booking-form');
+        const formConfirmation = document.getElementById('form-confirmation');
+        const confirmationDetails = document.getElementById('confirmation-details');
+        const resetFormBtn = document.getElementById('reset-form-btn');
+        const dateInput = document.getElementById('session-date');
+
+        // Set minimum selectable date to today
+        const todayISO = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', todayISO);
+
+        // Pre-fill package dropdown and scroll smoothly to Contact section
+        window.selectPackage = function(packageName) {
+            packageSelect.value = packageName;
+            // Ensure form is visible if previously submitted
+            bookingForm.classList.remove('hidden');
+            formConfirmation.classList.add('hidden');
+
+            const contactSection = document.getElementById('contact');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Subtle highlight pulse on the select dropdown
+            packageSelect.classList.add('border-gold');
+            setTimeout(() => packageSelect.focus(), 600);
+        };
+
+        // Form Validation & Submission
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const nameVal = document.getElementById('client-name').value.trim();
+            const emailVal = document.getElementById('client-email').value.trim();
+            const pkgVal = packageSelect.value;
+            const dateVal = dateInput.value;
+            const msgVal = document.getElementById('session-message').value.trim();
+
+            let isValid = true;
+
+            // Name check
+            const errName = document.getElementById('error-name');
+            if (nameVal.length < 2) {
+                errName.classList.remove('hidden');
+                isValid = false;
+            } else {
+                errName.classList.add('hidden');
+            }
+
+            // Email check
+            const errEmail = document.getElementById('error-email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailVal)) {
+                errEmail.classList.remove('hidden');
+                isValid = false;
+            } else {
+                errEmail.classList.add('hidden');
+            }
+
+            // Package check
+            const errPkg = document.getElementById('error-package');
+            if (!pkgVal) {
+                errPkg.classList.remove('hidden');
+                isValid = false;
+            } else {
+                errPkg.classList.add('hidden');
+            }
+
+            // Date check
+            const errDate = document.getElementById('error-date');
+            if (!dateVal) {
+                errDate.classList.remove('hidden');
+                isValid = false;
+            } else {
+                errDate.classList.add('hidden');
+            }
+
+            // Message check
+            const errMsg = document.getElementById('error-message');
+            if (msgVal.length < 10) {
+                errMsg.classList.remove('hidden');
+                isValid = false;
+            } else {
+                errMsg.classList.add('hidden');
+            }
+
+            if (!isValid) return;
+
+            // Show personalized confirmation
+            confirmationDetails.innerHTML = `
+                Thank you, <strong class="text-cream">${nameVal}</strong>. Your inquiry for the 
+                <span class="text-gold font-medium">${pkgVal}</span> on 
+                <strong class="text-cream">${dateVal}</strong> has been received. Elena will contact you at 
+                <span class="underline">${emailVal}</span> within 24 hours.
+            `;
+
+            bookingForm.classList.add('hidden');
+            formConfirmation.classList.remove('hidden');
+            lucide.createIcons();
+        });
+
+        // Reset form for a new inquiry
+        resetFormBtn.addEventListener('click', () => {
+            bookingForm.reset();
+            formConfirmation.classList.add('hidden');
+            bookingForm.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
